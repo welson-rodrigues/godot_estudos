@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4ochfjge1wap"]
+
+[ext_resource type="PackedScene" uid="uid://7qvw4fnixyyv" path="res://cenas/jogador/jogador.tscn" id="1_1424e"]
+[ext_resource type="Texture2D" uid="uid://bb3mm0jj1oxm8" path="res://assets/piso.png" id="2_4c7fp"]
+
+[node name="jogo" type="Node2D"]
+
+[node name="jogador" parent="." instance=ExtResource("1_1424e")]
+position = Vector2(597, 328)
+
+[node name="chao" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_4c7fp")
